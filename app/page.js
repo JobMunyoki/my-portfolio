@@ -14,21 +14,20 @@ export default function PortfolioWebsite() {
 
   const projects = [
     {
-      title: "SmartVision",
-      category: "Android Application",
-      description:
-        "An adaptive mobile system for eye comfort and radiation protection that monitors ambient light, proximity, screen time, and blink-related indicators to provide real-time recommendations.",
-      tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
-      github: "https://github.com/JobMunyoki",
-      demo: "#"
-    },
+  title: "SmartVision",
+  category: "Android Application",
+  description: "Built an Android system that monitors eye strain using ambient light and usage patterns, reducing prolonged screen exposure through real-time alerts.",
+  tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
+  github: "https://github.com/JobMunyoki/SmartVision",
+  demo: "https://urban-swap.vercel.app"
+},
     {
       title: "Urban Swap",
       category: "Web Platform",
       description:
         "A car hire web platform that allows owners to list vehicles and clients to browse, book, and manage rentals through a structured digital workflow.",
-      tech: ["Flask", "HTML", "CSS", "JavaScript", "GitHub"],
-      github: "https://github.com/JobMunyoki",
+      tech: ["Django", "HTML", "CSS", "JavaScript", "GitHub"],
+      github: "https://github.com/JobMunyoki/Urban Swap",
       demo: "#"
     },
     {
