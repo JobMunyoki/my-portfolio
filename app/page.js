@@ -333,8 +333,8 @@ export default function PortfolioWebsite() {
             <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur p-7">
               <h3 className="text-2xl font-semibold mb-5">Contact Details</h3>
               <div className="space-y-4 text-slate-300 text-lg">
-                <p><span className="font-semibold text-white">Email:</span> your.email@gmail.com</p>
-                <p><span className="font-semibold text-white">Phone:</span> +254 XXX XXX XXX</p>
+                <p><span className="font-semibold text-white">Email:</span> munyokijobdeveloper@gmail.com</p>
+                <p><span className="font-semibold text-white">Phone:</span> +254 799 165 471</p>
                 <p><span className="font-semibold text-white">GitHub:</span> github.com/JobMunyoki</p>
                 <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
               </div>
