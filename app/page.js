@@ -19,7 +19,7 @@ export default function PortfolioWebsite() {
   description: "Built an Android system that monitors eye strain using ambient light and usage patterns, reducing prolonged screen exposure through real-time alerts.",
   tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
   github: "https://github.com/JobMunyoki/SmartVision",
-  demo: "https://urban-swap.vercel.app"
+  demo: "#"
 },
     {
       title: "Urban Swap",
