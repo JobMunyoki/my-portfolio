@@ -14,20 +14,21 @@ export default function PortfolioWebsite() {
 
   const projects = [
     {
-  title: "SmartVision",
-  category: "Android Application",
-  description: "Built an Android system that monitors eye strain using ambient light and usage patterns, reducing prolonged screen exposure through real-time alerts.",
-  tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
-  github: "https://github.com/JobMunyoki/SmartVision",
-  demo: "#"
-},
+      title: "SmartVision",
+      category: "Android Application",
+      description:
+        "An adaptive mobile system for eye comfort and radiation protection that monitors ambient light, proximity, screen time, and blink-related indicators to provide real-time recommendations.",
+      tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
+      github: "https://github.com/JobMunyoki",
+      demo: "#"
+    },
     {
       title: "Urban Swap",
       category: "Web Platform",
       description:
         "A car hire web platform that allows owners to list vehicles and clients to browse, book, and manage rentals through a structured digital workflow.",
-      tech: ["Django", "HTML", "CSS", "JavaScript", "GitHub"],
-      github: "https://github.com/JobMunyoki/Urban Swap",
+      tech: ["Flask", "HTML", "CSS", "JavaScript", "GitHub"],
+      github: "https://github.com/JobMunyoki",
       demo: "#"
     },
     {
@@ -94,25 +95,48 @@ export default function PortfolioWebsite() {
                   Explore Projects
                 </a>
                 <a
-                  href="/cv.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-2xl border border-cyan-400/30 text-cyan-200 font-medium hover:bg-cyan-400/10 transition"
-                >
-                  View CV
-                </a>
-                <a
                   href="#contact"
                   className="px-6 py-3 rounded-2xl border border-white/15 bg-white/5 font-medium hover:bg-white/10 transition"
                 >
                   Contact Me
                 </a>
-                <a
-                  href="/cv.pdf"
-                  className="px-6 py-3 rounded-2xl border border-cyan-400/30 text-cyan-200 font-medium hover:bg-cyan-400/10 transition"
-                >
-                  Download CV
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="/cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white text-slate-950 font-semibold shadow-lg hover:-translate-y-0.5 transition"
+                  >
+                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-400 text-slate-950">📄</span>
+                    <span className="flex flex-col items-start leading-tight">
+                      <span>View CV</span>
+                      <span className="text-xs font-medium text-slate-500 group-hover:text-slate-700">Opens in new tab</span>
+                    </span>
+                  </a>
+                  <a
+                    href="/cv.pdf"
+                    download
+                    className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-cyan-400/30 text-cyan-200 font-medium hover:bg-cyan-400/10 transition"
+                  >
+                    <span>⬇</span>
+                    <span>Download</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mb-10 max-w-3xl rounded-3xl border border-cyan-400/20 bg-white/5 backdrop-blur p-5 shadow-xl">
+                <div className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-2">Premium CV Access</p>
+                    <h3 className="text-xl font-semibold text-white">Recruiter-ready resume</h3>
+                    <p className="text-slate-300 mt-2 leading-7">
+                      View my latest CV in a new tab or download a copy for review.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-sm text-slate-300">
+                    Updated for software development roles
+                  </div>
+                </div>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
