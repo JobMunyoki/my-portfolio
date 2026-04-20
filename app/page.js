@@ -94,6 +94,14 @@ export default function PortfolioWebsite() {
                   Explore Projects
                 </a>
                 <a
+                  href="/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-2xl border border-cyan-400/30 text-cyan-200 font-medium hover:bg-cyan-400/10 transition"
+                >
+                  View CV
+                </a>
+                <a
                   href="#contact"
                   className="px-6 py-3 rounded-2xl border border-white/15 bg-white/5 font-medium hover:bg-white/10 transition"
                 >
