@@ -65,10 +65,20 @@ export default function PortfolioWebsite() {
               <p className="text-sm text-slate-400 mt-2">Software Developer Portfolio</p>
             </div>
             <div className="hidden md:flex items-center gap-6 text-sm text-slate-300">
-              <a href="#about" className="hover:text-cyan-300 transition">About</a>
-              <a href="#projects" className="hover:text-cyan-300 transition">Projects</a>
-              <a href="#contact" className="hover:text-cyan-300 transition">Contact</a>
-            </div>
+            <a href="#about" className="hover:text-cyan-300 transition">About</a>
+            <a href="#projects" className="hover:text-cyan-300 transition">Projects</a>
+            <a href="#contact" className="hover:text-cyan-300 transition">Contact</a>
+
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 px-4 py-2 text-cyan-200 hover:bg-cyan-400/10 transition"
+            >
+              <span>📄</span>
+              <span>CV</span>
+            </a>
+          </div>
           </nav>
 
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
@@ -345,7 +355,7 @@ export default function PortfolioWebsite() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="mailto:your.email@gmail.com"
+                  href="mailto:munyokijobdeveloper@gmail.com"
                   className="px-6 py-3 rounded-2xl bg-cyan-400 text-slate-950 font-semibold hover:-translate-y-0.5 transition"
                 >
                   Email Me
