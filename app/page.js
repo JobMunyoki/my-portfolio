@@ -78,6 +78,15 @@ export default function PortfolioWebsite() {
               <span>📄</span>
               <span>CV</span>
             </a>
+            <a
+              href="https://www.linkedin.com/in/job-munyoki-8b4456303"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-blue-400/30 px-4 py-2 text-blue-300 hover:bg-blue-400/10 transition"
+            >
+              <span>💼</span>
+              <span>LinkedIn</span>
+            </a>
           </div>
           </nav>
 
@@ -133,6 +142,15 @@ export default function PortfolioWebsite() {
                   </a>
                 </div>
               </div>
+              <a
+                href="https://www.linkedin.com/in/your-username"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-blue-400/30 text-blue-300 font-medium hover:bg-blue-400/10 transition"
+              >
+                <span>💼</span>
+                <span>LinkedIn</span>
+              </a>
 
               <div className="mb-10 max-w-3xl rounded-3xl border border-cyan-400/20 bg-white/5 backdrop-blur p-5 shadow-xl">
                 <div className="flex flex-wrap items-center justify-between gap-4">
@@ -377,6 +395,17 @@ export default function PortfolioWebsite() {
                 <p><span className="font-semibold text-white">Email:</span> munyokijobdeveloper@gmail.com</p>
                 <p><span className="font-semibold text-white">Phone:</span> +254 799 165 471</p>
                 <p><span className="font-semibold text-white">GitHub:</span> github.com/JobMunyoki</p>
+                <p>
+                <span className="font-semibold text-white">LinkedIn:</span>{" "}
+                <a
+                  href="https://www.linkedin.com/in/your-username"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-cyan-300 hover:underline"
+                >
+                  linkedin.com/in/your-username
+                </a>
+              </p>
                 <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
               </div>
             </div>
