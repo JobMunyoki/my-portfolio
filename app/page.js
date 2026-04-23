@@ -143,7 +143,7 @@ export default function PortfolioWebsite() {
                 </div>
               </div>
               <a
-                href="https://www.linkedin.com/in/your-username"
+                href="https://www.linkedin.com/in/job-munyoki-8b4456303"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-blue-400/30 text-blue-300 font-medium hover:bg-blue-400/10 transition"
