@@ -398,12 +398,12 @@ export default function PortfolioWebsite() {
                 <p>
                 <span className="font-semibold text-white">LinkedIn:</span>{" "}
                 <a
-                  href="https://www.linkedin.com/in/your-username"
+                  href="https://www.linkedin.com/in/job-munyoki-8b4456303"
                   target="_blank"
                   rel="noreferrer"
                   className="text-cyan-300 hover:underline"
                 >
-                  linkedin.com/in/your-username
+                  linkedin.com/in/job-munyoki-8b4456303
                 </a>
               </p>
                 <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
