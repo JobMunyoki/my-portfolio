@@ -361,74 +361,79 @@ export default function PortfolioWebsite() {
       </section>
 
       <section id="contact" className="max-w-6xl mx-auto px-6 py-16">
-        <div className="relative overflow-hidden bg-gradient-to-br from-cyan-500/15 via-slate-900 to-indigo-500/15 border border-cyan-400/20 rounded-[2rem] shadow-2xl p-8 md:p-12">
-          <div className="absolute right-0 top-0 h-56 w-56 rounded-full bg-cyan-400/10 blur-3xl" />
-          <div className="absolute left-0 bottom-0 h-56 w-56 rounded-full bg-indigo-500/10 blur-3xl" />
+  <div className="relative overflow-hidden bg-gradient-to-br from-cyan-500/15 via-slate-900 to-indigo-500/15 border border-cyan-400/20 rounded-[2rem] shadow-2xl p-8 md:p-12">
+    <div className="absolute right-0 top-0 h-56 w-56 rounded-full bg-cyan-400/10 blur-3xl" />
+    <div className="absolute left-0 bottom-0 h-56 w-56 rounded-full bg-indigo-500/10 blur-3xl" />
 
-          <div className="relative grid lg:grid-cols-[1fr_0.8fr] gap-10 items-start">
-            <div>
-              <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">Contact</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Let’s build something valuable together.</h2>
-              <p className="text-slate-300 text-lg mb-8 max-w-3xl leading-8">
-                I’m open to graduate roles, internships, freelance opportunities, and collaborative software projects.
-                If you are looking for a motivated developer with practical project experience, let’s connect.
-              </p>
-              <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:munyokijobdeveloper@gmail.com"
-                className="px-6 py-3 rounded-2xl bg-cyan-400 text-slate-950 font-semibold hover:-translate-y-0.5 transition"
-              >
-                Email Me
-              </a>
+    <div className="relative grid lg:grid-cols-[1fr_0.8fr] gap-10 items-start">
+      <div>
+        <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">Contact</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let’s build something valuable together.</h2>
+        <p className="text-slate-300 text-lg mb-8 max-w-3xl leading-8">
+          I’m open to graduate roles, internships, freelance opportunities, and collaborative software projects.
+          If you are looking for a motivated developer with practical project experience, let’s connect.
+        </p>
 
-              <a
-                href="https://github.com/JobMunyoki"
-                target="_blank"
-                rel="noreferrer"
-                className="px-6 py-3 rounded-2xl border border-white/10 bg-white/5 font-medium hover:bg-white/10 transition"
-              >
-                Visit GitHub
-              </a>
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="mailto:munyokijobdeveloper@gmail.com"
+            className="px-6 py-3 rounded-2xl bg-cyan-400 text-slate-950 font-semibold hover:-translate-y-0.5 transition"
+          >
+            Email Me
+          </a>
 
-              <a
-                href="https://www.linkedin.com/in/job-munyoki-8b4456303"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-blue-400/30 bg-blue-400/10 text-blue-300 font-medium hover:bg-blue-400/20 transition"
-              >
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold">
-                  in
-                </span>
-                <span>LinkedIn</span>
-              </a>
-            </div>
+          <a
+            href="https://github.com/JobMunyoki"
+            target="_blank"
+            rel="noreferrer"
+            className="px-6 py-3 rounded-2xl border border-white/10 bg-white/5 font-medium hover:bg-white/10 transition"
+          >
+            Visit GitHub
+          </a>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur p-7">
-              <h3 className="text-2xl font-semibold mb-5">Contact Details</h3>
-              <div className="space-y-4 text-slate-300 text-lg">
-                <p><span className="font-semibold text-white">Email:</span> munyokijobdeveloper@gmail.com</p>
-                <p><span className="font-semibold text-white">Phone:</span> +254 799 165 471</p>
-                <p><span className="font-semibold text-white">GitHub:</span> github.com/JobMunyoki</p>
-                <div className="rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3">
-              <p className="mb-2 font-semibold text-white">LinkedIn</p>
-              <a
-                href="https://www.linkedin.com/in/job-munyoki-8b4456303"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-3 text-cyan-300 hover:text-cyan-200 transition"
-              >
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  in
-                </span>
-                <span className="break-all">linkedin.com/in/job-munyoki-8b4456303</span>
-              </a>
-            </div>
-                <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
-              </div>
-            </div>
-          </div>
+          <a
+            href="https://www.linkedin.com/in/job-munyoki-8b4456303"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-blue-400/30 bg-blue-400/10 text-blue-300 font-medium hover:bg-blue-400/20 transition"
+          >
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold">
+              in
+            </span>
+            <span>LinkedIn</span>
+          </a>
         </div>
-      </section>
+      </div>
+
+      <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur p-7">
+        <h3 className="text-2xl font-semibold mb-5">Contact Details</h3>
+
+        <div className="space-y-4 text-slate-300 text-lg">
+          <p><span className="font-semibold text-white">Email:</span> munyokijobdeveloper@gmail.com</p>
+          <p><span className="font-semibold text-white">Phone:</span> +254 799 165 471</p>
+          <p><span className="font-semibold text-white">GitHub:</span> github.com/JobMunyoki</p>
+
+          <div className="rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3">
+            <p className="mb-2 font-semibold text-white">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/in/job-munyoki-8b4456303"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-3 text-cyan-300 hover:text-cyan-200 transition"
+            >
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
+                in
+              </span>
+              <span className="break-all">linkedin.com/in/job-munyoki-8b4456303</span>
+            </a>
+          </div>
+
+          <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
