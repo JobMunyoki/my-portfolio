@@ -27,9 +27,9 @@ export default function PortfolioWebsite() {
       category: "Web Platform",
       description:
         "A car hire web platform that allows owners to list vehicles and clients to browse, book, and manage rentals through a structured digital workflow.",
-      technologies: ["Next.js", "Supabase", "Tailwind CSS", "Vercel", "GitHub"],
-      github: "https://github.com/JobMunyoki",
-      demo: "#"
+      tech: ["Next.js", "Supabase", "Tailwind CSS", "Vercel", "GitHub"],
+      github: "https://github.com/JobMunyoki/urban-swap-lite",
+      demo: "https://urban-swap-lite-4frfzdunj-jobmunyokis-projects.vercel.app"
     },
     {
       title: "Machine Learning Coursework Projects",
