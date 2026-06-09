@@ -27,7 +27,7 @@ export default function PortfolioWebsite() {
       category: "Web Platform",
       description:
         "A car hire web platform that allows owners to list vehicles and clients to browse, book, and manage rentals through a structured digital workflow.",
-      tech: ["Flask", "HTML", "CSS", "JavaScript", "GitHub"],
+      technologies: ["Next.js", "Supabase", "Tailwind CSS", "Vercel", "GitHub"],
       github: "https://github.com/JobMunyoki",
       demo: "#"
     },
