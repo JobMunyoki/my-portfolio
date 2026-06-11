@@ -9,6 +9,11 @@ export default function PortfolioWebsite() {
     "SQLite",
     "Git/GitHub",
     "Machine Learning",
+    "Streamlit",
+    "Pandas",
+    "Plotly",
+    "Data Analytics",
+    "Business Intelligence",
     "Cybersecurity"
   ];
 
@@ -32,6 +37,22 @@ export default function PortfolioWebsite() {
       demo: "https://urban-swap-lite-4frfzdunj-jobmunyokis-projects.vercel.app"
     },
     {
+  title: "Smart Agrovet Sales Analytics Dashboard",
+  category: "Data Analytics & Business Intelligence",
+  description:
+    "A business intelligence dashboard designed for agrovet businesses to analyze sales performance, product demand, revenue trends, and inventory movement. The system processes sales data from CSV files and provides actionable insights through interactive visualizations and KPI tracking.",
+  tech: [
+    "Python",
+    "Pandas",
+    "Streamlit",
+    "Plotly",
+    "CSV Analytics",
+    "Business Intelligence"
+  ],
+  github: "https://github.com/JobMunyoki",
+  demo: "#"
+},
+    {
       title: "Machine Learning Coursework Projects",
       category: "Data & AI",
       description:
@@ -39,8 +60,25 @@ export default function PortfolioWebsite() {
       tech: ["Python", "Machine Learning", "Data Analysis"],
       github: "https://github.com/JobMunyoki",
       demo: "#"
-    }
+    },
+    
   ];
+  const experience = [
+  {
+    role: "QuickBooks POS & IT Support",
+    company: "Winner Distributors",
+    type: "IT Support & Business Systems",
+    description:
+      "Provided technical support, QuickBooks Point of Sale maintenance, troubleshooting, backup and recovery, network support, and user assistance. Helped maintain business systems and ensure smooth daily operations.",
+    tools: [
+      "QuickBooks POS",
+      "Windows",
+      "Networking",
+      "Data Backup",
+      "Technical Support"
+    ]
+  }
+];
 
   const strengths = [
     "Problem-solving and debugging",
@@ -67,6 +105,7 @@ export default function PortfolioWebsite() {
             <div className="hidden md:flex items-center gap-6 text-sm text-slate-300">
             <a href="#about" className="hover:text-cyan-300 transition">About</a>
             <a href="#projects" className="hover:text-cyan-300 transition">Projects</a>
+            <a href="#experience" className="hover:text-cyan-300 transition">Experience</a>
             <a href="#contact" className="hover:text-cyan-300 transition">Contact</a>
 
             <a
@@ -171,7 +210,7 @@ export default function PortfolioWebsite() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">3+</p>
+                  <p className="text-2xl font-bold text-cyan-300">4+</p>
                   <p className="text-sm text-slate-400 mt-1">Featured Projects</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -332,7 +371,51 @@ export default function PortfolioWebsite() {
           ))}
         </div>
       </section>
+      <section id="experience" className="max-w-6xl mx-auto px-6 py-16">
+  <div className="flex items-end justify-between gap-4 mb-8 flex-wrap">
+    <div>
+      <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-2">
+        Experience
+      </p>
+      <h2 className="text-3xl font-bold">Professional Experience</h2>
+    </div>
+    <p className="text-slate-400 max-w-xl">
+      Practical IT and business systems experience supporting real company operations.
+    </p>
+  </div>
 
+  <div className="grid md:grid-cols-1 gap-6">
+    {experience.map((item) => (
+      <div
+        key={item.role}
+        className="bg-slate-900 rounded-3xl shadow-xl border border-white/10 p-8 hover:border-cyan-400/30 transition"
+      >
+        <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-3">
+          {item.type}
+        </p>
+
+        <h3 className="text-2xl font-semibold mb-2">{item.role}</h3>
+
+        <p className="text-slate-400 mb-5">{item.company}</p>
+
+        <p className="text-slate-300 leading-8 mb-6">
+          {item.description}
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          {item.tools.map((tool) => (
+            <span
+              key={tool}
+              className="text-sm px-3 py-1 rounded-full bg-slate-800 text-slate-200 border border-white/5"
+            >
+              {tool}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
       <section className="max-w-6xl mx-auto px-6 py-2">
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-slate-900 border border-white/10 rounded-3xl p-8">
