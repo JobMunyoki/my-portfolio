@@ -27,6 +27,23 @@ export default function PortfolioWebsite() {
 
   const projects = [
     {
+  title: "FraudGuard AI",
+  category: "AI-Powered Banking Fraud Detection",
+  status: "In Development",
+  description:
+    "An AI-powered banking fraud detection system designed to analyze financial transactions, calculate risk scores, identify suspicious activity, and support fraud review workflows through a full-stack dashboard.",
+  tech: [
+    "Spring Boot",
+    "React",
+    "FastAPI",
+    "Python",
+    "MySQL",
+    "Machine Learning"
+  ],
+  github: "https://github.com/JobMunyoki/fraudguard-ai",
+  demo: "#"
+},
+    {
       title: "CyberShield",
       category: "Cybersecurity Incident & Vulnerability Management System",
       description:
@@ -377,6 +394,11 @@ export default function PortfolioWebsite() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.2),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.18),_transparent_30%)]" />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-5">
                   <span className="text-xs uppercase tracking-[0.25em] text-cyan-200/90 mb-2">{project.category}</span>
+                  {project.status && (
+                    <span className="mb-2 inline-flex w-fit rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
+                      {project.status}
+                    </span>
+                  )}
                   <h3 className="text-2xl font-semibold">{project.title}</h3>
                 </div>
               </div>
@@ -400,12 +422,16 @@ export default function PortfolioWebsite() {
                 >
                   View Code
                 </a>
+                {project.demo !== "#" && (
                 <a
                   href={project.demo}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex-1 text-center px-4 py-3 rounded-2xl border border-white/10 bg-white/5 font-medium hover:bg-white/10 transition"
                 >
                   Live Demo
                 </a>
+              )}
               </div>
             </div>
           ))}
