@@ -2,6 +2,10 @@ export default function PortfolioWebsite() {
   const skills = [
     "Java",
     "Python",
+    "Django REST Framework",
+    "Material UI",
+    "MySQL",
+    "REST APIs",
     "JavaScript",
     "React",
     "Flask",
@@ -14,10 +18,30 @@ export default function PortfolioWebsite() {
     "Plotly",
     "Data Analytics",
     "Business Intelligence",
+    "Scikit-Learn",
+    "NumPy",
+    "Predictive Analytics",
+    "Sales Forecasting",
     "Cybersecurity"
   ];
 
   const projects = [
+    {
+      title: "CyberShield",
+      category: "Cybersecurity Incident & Vulnerability Management System",
+      description:
+        "A full-stack cybersecurity platform that enables organizations to manage IT assets, report security incidents, track vulnerabilities, monitor critical alerts, maintain investigation timelines, and generate audit logs through a secure role-based system.",
+      tech: [
+        "Django REST Framework",
+        "React",
+        "Material UI",
+        "MySQL",
+        "Railway",
+        "Vercel"
+      ],
+      github: "https://github.com/JobMunyoki/cybershield",
+      demo: "https://cybershield-three-pi.vercel.app"
+    },
     {
       title: "SmartVision",
       category: "Android Application",
@@ -50,7 +74,23 @@ export default function PortfolioWebsite() {
     "Business Intelligence"
   ],
   github: "https://github.com/JobMunyoki",
-  demo: "#"
+  demo: "https://smart-agrovet-sales-dashboard-adm6s4hshkgz2ejtpehewx.streamlit.app"
+},
+  {
+  title: "Agrovet Sales Prediction Model",
+  category: "Machine Learning & Predictive Analytics",
+  description:
+    "A machine learning application that predicts future agrovet sales using historical sales data. The model helps businesses forecast demand, identify sales trends, and support inventory planning and business decision-making.",
+  tech: [
+    "Python",
+    "Scikit-Learn",
+    "Pandas",
+    "NumPy",
+    "Machine Learning",
+    "Sales Forecasting"
+  ],
+  github: "https://github.com/JobMunyoki",
+  demo: "https://jobmunyoki-agrovet-sales-prediction-model-app-j7b7sn.streamlit.app"
 },
     {
       title: "Machine Learning Coursework Projects",
@@ -210,7 +250,7 @@ export default function PortfolioWebsite() {
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">4+</p>
+                  <p className="text-2xl font-bold text-cyan-300">6+</p>
                   <p className="text-sm text-slate-400 mt-1">Featured Projects</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
