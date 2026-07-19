@@ -69,10 +69,10 @@ export default function PortfolioWebsite() {
     {
       title: "SmartVision",
       category: "Android Application",
-      status: "In Development",
+      status: "Ongoing Development",
       description:
-        "An adaptive mobile system for eye comfort and radiation protection that monitors ambient light, proximity, screen time, and blink-related indicators to provide real-time recommendations.",
-      tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
+        "An Android-based eye health application that monitors ambient light, screen time, device proximity, and user behavior to promote healthier digital habits. The system provides real-time recommendations and notifications to reduce eye strain, with ongoing development focused on AI-powered eye health analysis, cloud synchronization, and personalized wellness insights.",
+      tech: ["Java", "Android SDK", "SQLite", "CameraX", "Device Sensors", "Usage Stats API", "Foreground Services", "Notifications"],
       github: "https://github.com/JobMunyoki",
       demo: "#"
     },
@@ -160,6 +160,7 @@ export default function PortfolioWebsite() {
             </div>
             <div className="hidden md:flex items-center gap-6 text-sm text-slate-300">
             <a href="#about" className="hover:text-cyan-300 transition">About</a>
+            <a href="#skills" className="hover:text-cyan-300 transition">Skills</a>
             <a href="#projects" className="hover:text-cyan-300 transition">Projects</a>
             <a href="#experience" className="hover:text-cyan-300 transition">Experience</a>
             <a href="#contact" className="hover:text-cyan-300 transition">Contact</a>
@@ -189,13 +190,16 @@ export default function PortfolioWebsite() {
 
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 text-cyan-200 text-sm mb-6">
+              <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200 mb-6">
                 <span className="h-2.5 w-2.5 rounded-full bg-cyan-300" />
-                Open to graduate roles, internships, and freelance opportunities
+                Open to junior software engineering, backend, full-stack, AI/ML, cybersecurity, and remote opportunities
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] mb-6 max-w-4xl">
-                Building practical <span className="text-cyan-300">mobile</span>, <span className="text-cyan-300">web</span>, and <span className="text-cyan-300">backend</span> solutions.
+              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                Building practical{" "}
+                <span className="text-cyan-300">full-stack</span>,{" "}
+                <span className="text-cyan-300">backend</span>, and{" "}
+                <span className="text-cyan-300">AI-powered</span> solutions.
               </h1>
 
               <p className="text-lg md:text-xl text-slate-300 leading-8 max-w-3xl mb-8">
@@ -235,7 +239,7 @@ export default function PortfolioWebsite() {
                     className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-cyan-400/30 text-cyan-200 font-medium hover:bg-cyan-400/10 transition"
                   >
                     <span>⬇</span>
-                    <span>Download</span>
+                    <span>Download CV</span>
                   </a>
                 </div>
               </div>
@@ -248,38 +252,23 @@ export default function PortfolioWebsite() {
                 <span>💼</span>
                 <span>LinkedIn</span>
               </a>
-
-              <div className="mb-10 max-w-3xl rounded-3xl border border-cyan-400/20 bg-white/5 backdrop-blur p-5 shadow-xl">
-                <div className="flex flex-wrap items-center justify-between gap-4">
-                  <div>
-                    <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-2">Premium CV Access</p>
-                    <h3 className="text-xl font-semibold text-white">Recruiter-ready resume</h3>
-                    <p className="text-slate-300 mt-2 leading-7">
-                      View my latest CV in a new tab or download a copy for review.
-                    </p>
-                  </div>
-                  <div className="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-sm text-slate-300">
-                    Updated for software development roles
-                  </div>
-                </div>
-              </div>
-
+              
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                   <p className="text-2xl font-bold text-cyan-300">6+</p>
                   <p className="text-sm text-slate-400 mt-1">Featured Projects</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">8+</p>
+                  <p className="text-2xl font-bold text-cyan-300">20+</p>
                   <p className="text-sm text-slate-400 mt-1">Core Technologies</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">Mobile</p>
-                  <p className="text-sm text-slate-400 mt-1">Android Focus</p>
+                  <p className="text-2xl font-bold text-cyan-300">5+</p>
+                  <p className="text-sm text-slate-400 mt-1">Live Deployments</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">Live</p>
-                  <p className="text-sm text-slate-400 mt-1">Portfolio Online</p>
+                  <p className="text-2xl font-bold text-cyan-300">Full-Stack</p>
+                  <p className="text-sm text-slate-400 mt-1">Backend • AI • Android</p>
                 </div>
               </div>
             </div>
@@ -297,9 +286,9 @@ export default function PortfolioWebsite() {
                 </div>
                 <div className="space-y-4 text-slate-300 leading-7">
                   <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
-                  <p><span className="font-semibold text-white">Focus:</span> Software Development, Android, Backend, Web Applications</p>
+                  <p><strong>Focus:</strong> Full-Stack Development, Backend Engineering,  AI/ML, Cybersecurity, and Android Development</p>
                   <p><span className="font-semibold text-white">Education:</span> Bachelor of Science in Computer Science</p>
-                  <p><span className="font-semibold text-white">Current Goal:</span> Building a strong professional portfolio and launching a software career.</p>
+                  <p><strong>Current Goal:</strong> Seeking junior software engineering, backend, full-stack, AI/ML, and cybersecurity opportunities.</p>
                 </div>
               </div>
 
@@ -324,13 +313,15 @@ export default function PortfolioWebsite() {
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">About Me</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-5">A developer focused on useful, practical systems.</h2>
             <p className="text-slate-300 leading-8 text-lg mb-5">
-              I am a Computer Science graduate with experience in designing and building software systems
-              across mobile, web, and backend environments. My work includes Android development,
-              database integration, full-stack project development, and academic research-driven system design.
+              I am a Computer Science graduate with practical experience building
+              full-stack web applications, backend APIs, Android applications,
+              machine-learning systems, and database-driven platforms.
             </p>
+
             <p className="text-slate-300 leading-8 text-lg">
-              I enjoy translating technical requirements into usable applications, improving user experiences,
-              and continuously sharpening my software engineering skills through projects and deployment.
+              My projects include fraud detection, cybersecurity management,
+              business analytics, sales prediction, and mobile health technology.
+              I focus on building reliable, usable, and deployable software solutions.
             </p>
           </div>
 
@@ -338,12 +329,22 @@ export default function PortfolioWebsite() {
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">What I Bring</p>
             <div className="space-y-5 text-slate-300 leading-7">
               <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
-                <h3 className="font-semibold text-white mb-2">Mobile + Web Perspective</h3>
-                <p>I can think across Android apps, backend logic, and browser-based user experiences.</p>
+                <h3 className="font-semibold text-white mb-2">
+                  Full-Stack Perspective
+                </h3>
+                <p>
+                  I work across frontend interfaces, backend APIs, databases,
+                  machine-learning services, and deployment workflows.
+                </p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
-                <h3 className="font-semibold text-white mb-2">Project-Based Experience</h3>
-                <p>I have built and documented practical academic and personal software projects end to end.</p>
+                <h3 className="font-semibold text-white mb-2">
+                  End-to-End Project Experience
+                </h3>
+                <p>
+                  I have designed, developed, tested, documented, and deployed practical
+                  software projects from concept to production.
+                </p>
               </div>
               <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
                 <h3 className="font-semibold text-white mb-2">Growth Mindset</h3>
@@ -354,7 +355,7 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 py-2">
+      <section id="skills" className="max-w-6xl mx-auto px-6 py-2">
         <div className="flex items-center justify-between gap-4 mb-6 flex-wrap">
           <div>
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-2">Skills</p>
@@ -495,14 +496,14 @@ export default function PortfolioWebsite() {
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">Career Focus</p>
             <h3 className="text-2xl font-semibold mb-3">Target Roles</h3>
             <p className="text-slate-300 leading-8">
-              Junior Software Developer, Android Developer, Backend Developer, Graduate Trainee, and internship opportunities.
+              Backend Software Engineer, Full-Stack Developer, AI/ML Developer, Cybersecurity Engineer, and Android Developer.
             </p>
           </div>
           <div className="bg-slate-900 border border-white/10 rounded-3xl p-8">
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">Availability</p>
             <h3 className="text-2xl font-semibold mb-3">Open for Opportunities</h3>
             <p className="text-slate-300 leading-8">
-              Available for full-time roles, internships, freelance work, collaboration, and portfolio-driven opportunities.
+              Open to graduate software engineering roles, backend development, full-stack development, AI/ML engineering, cybersecurity, internships, and remote opportunities.
             </p>
           </div>
         </div>
@@ -516,18 +517,37 @@ export default function PortfolioWebsite() {
     <div className="relative grid lg:grid-cols-[1fr_0.8fr] gap-10 items-start">
       <div>
         <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">Contact</p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let’s build something valuable together.</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let’s Build Your Next Software Solution</h2>
         <p className="text-slate-300 text-lg mb-8 max-w-3xl leading-8">
-          I’m open to graduate roles, internships, freelance opportunities, and collaborative software projects.
-          If you are looking for a motivated developer with practical project experience, let’s connect.
+          I’m currently seeking junior software engineering, backend, full-stack,
+          AI/ML, and cybersecurity opportunities. Whether you’re hiring,
+          collaborating, or discussing a software project, I’d be happy to connect.
         </p>
 
         <div className="flex flex-wrap gap-4">
           <a
-            href="mailto:munyokijobdeveloper@gmail.com"
-            className="px-6 py-3 rounded-2xl bg-cyan-400 text-slate-950 font-semibold hover:-translate-y-0.5 transition"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=munyokijobdeveloper@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
           >
             Email Me
+          </a>
+
+          <a
+            href="tel:+254799165471"
+            className="inline-flex items-center justify-center rounded-lg border border-green-400/40 bg-green-400/10 px-5 py-3 font-semibold text-green-300 transition hover:bg-green-400/20"
+          >
+            Call Me
+          </a>
+
+          <a
+            href="https://wa.me/254799165471?text=Hello%20Job%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg border border-green-400/40 bg-green-400/10 px-5 py-3 font-semibold text-green-300 transition hover:bg-green-400/20"
+          >
+            WhatsApp
           </a>
 
           <a
@@ -536,33 +556,59 @@ export default function PortfolioWebsite() {
             rel="noreferrer"
             className="px-6 py-3 rounded-2xl border border-white/10 bg-white/5 font-medium hover:bg-white/10 transition"
           >
-            Visit GitHub
+            GitHub Profile
           </a>
-
-          <a
-            href="https://www.linkedin.com/in/job-munyoki-8b4456303"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-blue-400/30 bg-blue-400/10 text-blue-300 font-medium hover:bg-blue-400/20 transition"
-          >
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold">
-              in
-            </span>
-            <span>LinkedIn</span>
-          </a>
+        
         </div>
+        <p className="mt-8 border-t border-white/10 pt-6 text-slate-400 leading-7 italic">
+          Thank you for taking the time to explore my portfolio. I&apos;m
+          passionate about building practical software solutions that solve
+          real-world problems, and I&apos;m always open to new opportunities,
+          collaborations, and meaningful conversations. I look forward to
+          connecting with you.
+        </p>
       </div>
 
       <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur p-7">
         <h3 className="text-2xl font-semibold mb-5">Contact Details</h3>
 
         <div className="space-y-4 text-slate-300 text-lg">
-          <p><span className="font-semibold text-white">Email:</span> munyokijobdeveloper@gmail.com</p>
-          <p><span className="font-semibold text-white">Phone:</span> +254 799 165 471</p>
-          <p><span className="font-semibold text-white">GitHub:</span> github.com/JobMunyoki</p>
+          <p><span className="font-semibold text-white">📧 Email:</span>{" "}
+            <a
+              href="mailto:munyokijobdeveloper@gmail.com"
+              className="text-cyan-300 hover:text-cyan-200 hover:underline transition"
+            >
+              munyokijobdeveloper@gmail.com
+            </a>
+          </p>
+          <p>
+            <span className="font-semibold text-white">📱 Phone:</span>{" "}
+            <a
+              href="tel:+254799165471"
+              className="text-cyan-300 hover:text-cyan-200 hover:underline transition"
+            >
+              +254 799 165 471
+            </a>
+          </p>
+          <p>
+            <span className="font-semibold text-white">💻 GitHub:</span>{" "}
+            <a
+              href="https://github.com/JobMunyoki"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-300 hover:text-cyan-200 hover:underline transition"
+            >
+              github.com/JobMunyoki
+            </a>
+          </p>
 
           <div className="rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3">
-            <p className="mb-2 font-semibold text-white">LinkedIn</p>
+            <p className="mb-1 font-semibold text-white">LinkedIn</p>
+
+            <p className="text-sm text-slate-400 mb-3">
+              Connect with me professionally
+            </p>
+
             <a
               href="https://www.linkedin.com/in/job-munyoki-8b4456303"
               target="_blank"
@@ -572,11 +618,31 @@ export default function PortfolioWebsite() {
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
                 in
               </span>
-              <span className="break-all">linkedin.com/in/job-munyoki-8b4456303</span>
+
+              <span className="break-all">
+                linkedin.com/in/job-munyoki-8b4456303
+              </span>
             </a>
           </div>
 
-          <p><span className="font-semibold text-white">Location:</span> Nairobi, Kenya</p>
+          <p>
+            <span className="font-semibold text-white">📍 Location:</span>{" "}
+            Nairobi, Kenya
+          </p>
+          <p>
+            <span className="font-semibold text-white">🟢 Availability:</span>{" "}
+            Available for software engineering opportunities
+          </p>
+
+          <p>
+            <span className="font-semibold text-white">🕒 Time Zone:</span>{" "}
+            East Africa Time (UTC+3)
+          </p>
+
+          <p>
+            <span className="font-semibold text-white">💬 Response Time:</span>{" "}
+            Usually responds within 24 hours
+          </p>
         </div>
       </div>
     </div>
