@@ -2,27 +2,33 @@ export default function PortfolioWebsite() {
   const skills = [
     "Java",
     "Python",
-    "Django REST Framework",
-    "Material UI",
-    "MySQL",
-    "REST APIs",
     "JavaScript",
+    "Spring Boot",
+    "FastAPI",
+    "Django REST Framework",
     "React",
-    "Flask",
-    "Android Development",
+    "Next.js",
+    "Material UI",
+    "Tailwind CSS",
+    "MySQL",
+    "PostgreSQL",
     "SQLite",
-    "Git/GitHub",
+    "Supabase",
+    "REST APIs",
+    "JWT Authentication",
     "Machine Learning",
-    "Streamlit",
+    "Scikit-Learn",
     "Pandas",
+    "NumPy",
+    "Streamlit",
     "Plotly",
     "Data Analytics",
-    "Business Intelligence",
-    "Scikit-Learn",
-    "NumPy",
     "Predictive Analytics",
-    "Sales Forecasting",
-    "Cybersecurity"
+    "Cybersecurity",
+    "Git/GitHub",
+    "Vercel",
+    "Railway",
+    "Android Development"
   ];
 
   const projects = [
@@ -111,16 +117,7 @@ export default function PortfolioWebsite() {
   github: "https://github.com/JobMunyoki",
   demo: "https://jobmunyoki-agrovet-sales-prediction-model-app-j7b7sn.streamlit.app"
 },
-    {
-      title: "Machine Learning Coursework Projects",
-      category: "Data & AI",
-      description:
-        "Academic and practical work involving data analysis, model interpretation, and foundational machine learning concepts applied to problem-solving.",
-      tech: ["Python", "Machine Learning", "Data Analysis"],
-      github: "https://github.com/JobMunyoki",
-      demo: "#"
-    },
-    
+        
   ];
   const experience = [
   {
