@@ -29,19 +29,20 @@ export default function PortfolioWebsite() {
     {
   title: "FraudGuard AI",
   category: "AI-Powered Banking Fraud Detection",
-  status: "In Development",
   description:
-    "An AI-powered banking fraud detection system designed to analyze financial transactions, calculate risk scores, identify suspicious activity, and support fraud review workflows through a full-stack dashboard.",
+     "An AI-powered banking fraud detection platform that analyzes financial transactions, predicts fraudulent activity using machine learning, calculates fraud risk scores, provides an interactive analytics dashboard, and supports fraud investigation workflows through secure role-based access.",
   tech: [
     "Spring Boot",
     "React",
     "FastAPI",
     "Python",
     "MySQL",
-    "Machine Learning"
+    "JWT Authentication",
+    "Machine Learning",
+    "REST APIs"
   ],
   github: "https://github.com/JobMunyoki/fraudguard-ai",
-  demo: "#"
+  demo: "https://fraudguard-ai-2foh.vercel.app"
 },
     {
       title: "CyberShield",
@@ -62,6 +63,7 @@ export default function PortfolioWebsite() {
     {
       title: "SmartVision",
       category: "Android Application",
+      status: "In Development",
       description:
         "An adaptive mobile system for eye comfort and radiation protection that monitors ambient light, proximity, screen time, and blink-related indicators to provide real-time recommendations.",
       tech: ["Java", "Android SDK", "SQLite", "Sensors", "Notifications"],
