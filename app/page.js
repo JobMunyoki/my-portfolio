@@ -28,6 +28,7 @@ export default function PortfolioWebsite() {
     "Git/GitHub",
     "Vercel",
     "Railway",
+    "Render",
     "Android Development"
   ];
 
@@ -36,7 +37,7 @@ export default function PortfolioWebsite() {
   title: "FraudGuard AI",
   category: "AI-Powered Banking Fraud Detection",
   description:
-     "An AI-powered banking fraud detection platform that analyzes financial transactions, predicts fraudulent activity using machine learning, calculates fraud risk scores, provides an interactive analytics dashboard, and supports fraud investigation workflows through secure role-based access.",
+    "An AI-powered banking fraud detection platform built with Spring Boot, React, FastAPI, MySQL, Render, and Vercel. The system analyzes financial transactions, predicts fraudulent activity using machine learning, calculates fraud risk scores, provides interactive analytics dashboards, and supports secure fraud investigation workflows through role-based access."
   tech: [
     "Spring Boot",
     "React",
@@ -45,7 +46,9 @@ export default function PortfolioWebsite() {
     "MySQL",
     "JWT Authentication",
     "Machine Learning",
-    "REST APIs"
+    "REST APIs",
+    "Render",
+    "Vercel"
   ],
   github: "https://github.com/JobMunyoki/fraudguard-ai",
   demo: "https://fraudguard-ai-2foh.vercel.app"
