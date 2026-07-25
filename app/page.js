@@ -1,7 +1,28 @@
+"use client";
+
+import { useRef } from "react";
+
 export default function PortfolioWebsite() {
+    const projectsContainerRef = useRef(null);
+
+    const scrollProjects = (direction) => {
+      const container = projectsContainerRef.current;
+
+      if (!container) return;
+
+      const firstCard = container.querySelector("[data-project-card]");
+      const cardWidth = firstCard?.offsetWidth || 350;
+      const gap = 24;
+
+      container.scrollBy({
+        left: direction === "left" ? -(cardWidth + gap) : cardWidth + gap,
+        behavior: "smooth",
+      });
+    };
   const skills = [
     "Java",
     "Python",
+    "Kotlin",
     "JavaScript",
     "Spring Boot",
     "FastAPI",
@@ -29,7 +50,10 @@ export default function PortfolioWebsite() {
     "Vercel",
     "Railway",
     "Render",
-    "Android Development"
+    "Android Development",
+    "Material Design",
+    "Notification Listener Service",
+    "Do Not Disturb API",
   ];
 
   const projects = [
@@ -77,6 +101,24 @@ export default function PortfolioWebsite() {
         "An Android-based eye health application that monitors ambient light, screen time, device proximity, and user behavior to promote healthier digital habits. The system provides real-time recommendations and notifications to reduce eye strain, with ongoing development focused on AI-powered eye health analysis, cloud synchronization, and personalized wellness insights.",
       tech: ["Java", "Android SDK", "SQLite", "CameraX", "Device Sensors", "Usage Stats API", "Foreground Services", "Notifications"],
       github: "https://github.com/JobMunyoki",
+      demo: "#"
+    },
+    {
+      title: "AutoDND",
+      category: "Android Automation Application",
+      description:
+        "An Android automation application designed to detect when Do Not Disturb mode is active and automatically respond to incoming WhatsApp messages. The application provides a Material Design dashboard, customizable auto-reply messages, service controls, and status monitoring to help users manage communication while unavailable.",
+      tech: [
+        "Kotlin",
+        "Android SDK",
+        "Android Studio",
+        "Material Design",
+        "Notification Listener Service",
+        "Do Not Disturb Access",
+        "SharedPreferences",
+        "Foreground Services"
+      ],
+      github: "https://github.com/JobMunyoki/auto-reply-dnd",
       demo: "#"
     },
     {
@@ -258,7 +300,7 @@ export default function PortfolioWebsite() {
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">6+</p>
+                  <p className="text-2xl font-bold text-cyan-300">7+</p>
                   <p className="text-sm text-slate-400 mt-1">Featured Projects</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -379,65 +421,135 @@ export default function PortfolioWebsite() {
       </section>
 
       <section id="projects" className="max-w-6xl mx-auto px-6 py-16">
-        <div className="flex items-end justify-between gap-4 mb-8 flex-wrap">
+        <div className="flex items-end justify-between gap-6 mb-8 flex-wrap">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-2">Projects</p>
+            <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-2">
+              Projects
+            </p>
+
             <h2 className="text-3xl font-bold">Selected Work</h2>
+
+            <p className="mt-3 text-slate-400 max-w-2xl leading-7">
+              Explore projects that demonstrate my full-stack, backend, Android,
+              artificial intelligence, machine-learning, cybersecurity, and data
+              analytics capabilities.
+            </p>
           </div>
-          <p className="text-slate-400 max-w-xl">A few featured projects that reflect my Android, backend, and software engineering capabilities.</p>
+
+          {/* Carousel navigation buttons */}
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={() => scrollProjects("left")}
+              aria-label="Scroll to previous project"
+              className="group flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-slate-900 text-xl text-white shadow-lg transition hover:-translate-y-0.5 hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+            >
+              <span
+                aria-hidden="true"
+                className="transition-transform group-hover:-translate-x-0.5"
+              >
+                ←
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => scrollProjects("right")}
+              aria-label="Scroll to next project"
+              className="group flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-slate-900 text-xl text-white shadow-lg transition hover:-translate-y-0.5 hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+            >
+              <span
+                aria-hidden="true"
+                className="transition-transform group-hover:translate-x-0.5"
+              >
+                →
+              </span>
+            </button>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {/* Horizontal project carousel */}
+        <div
+          ref={projectsContainerRef}
+          className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
           {projects.map((project) => (
-            <div
+            <article
               key={project.title}
-              className="group bg-slate-900 rounded-3xl shadow-xl border border-white/10 p-6 flex flex-col hover:border-cyan-400/30 transition"
+              data-project-card
+              className="group w-[88%] shrink-0 snap-start rounded-3xl border border-white/10 bg-slate-900 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400/30 sm:w-[70%] md:w-[48%] lg:w-[calc((100%-3rem)/3)]"
             >
-              <div className="mb-5 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-800 via-slate-800 to-slate-700 h-44 relative">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.2),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.18),_transparent_30%)]" />
-                <div className="absolute inset-0 flex flex-col items-start justify-end p-5">
-                  <span className="text-xs uppercase tracking-[0.25em] text-cyan-200/90 mb-2">{project.category}</span>
-                  {project.status && (
-                    <span className="mb-2 inline-flex w-fit rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
-                      {project.status}
+              <div className="flex h-full flex-col">
+                {/* Project visual header */}
+                <div className="relative mb-5 h-44 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-800 via-slate-800 to-slate-700">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.2),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.18),_transparent_30%)]" />
+
+                  <div className="absolute inset-0 flex flex-col items-start justify-end p-5">
+                    <span className="mb-2 text-xs uppercase tracking-[0.25em] text-cyan-200/90">
+                      {project.category}
                     </span>
+
+                    {project.status && (
+                      <span className="mb-2 inline-flex w-fit rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
+                        {project.status}
+                      </span>
+                    )}
+
+                    <h3 className="text-2xl font-semibold text-white">
+                      {project.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Project description */}
+                <p className="mb-5 flex-1 leading-7 text-slate-300">
+                  {project.description}
+                </p>
+
+                {/* Technology tags */}
+                <div className="mb-6 flex flex-wrap gap-2">
+                  {project.tech.map((item) => (
+                    <span
+                      key={`${project.title}-${item}`}
+                      className="rounded-full border border-white/5 bg-slate-800 px-3 py-1 text-sm text-slate-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Project links */}
+                <div className="mt-auto flex gap-3">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 rounded-2xl bg-cyan-400 px-4 py-3 text-center font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                  >
+                    View Code
+                  </a>
+
+                  {project.demo !== "#" && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center font-medium transition hover:-translate-y-0.5 hover:bg-white/10"
+                    >
+                      Live Demo
+                    </a>
                   )}
-                  <h3 className="text-2xl font-semibold">{project.title}</h3>
                 </div>
               </div>
-              <p className="text-slate-300 leading-7 mb-5 flex-1">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.tech.map((item) => (
-                  <span
-                    key={item}
-                    className="text-sm px-3 py-1 rounded-full bg-slate-800 text-slate-200 border border-white/5"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <div className="flex gap-3 mt-auto">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex-1 text-center px-4 py-3 rounded-2xl bg-cyan-400 text-slate-950 font-semibold hover:-translate-y-0.5 transition"
-                >
-                  View Code
-                </a>
-                {project.demo !== "#" && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex-1 text-center px-4 py-3 rounded-2xl border border-white/10 bg-white/5 font-medium hover:bg-white/10 transition"
-                >
-                  Live Demo
-                </a>
-              )}
-              </div>
-            </div>
+            </article>
           ))}
+        </div>
+
+        {/* Browsing instruction */}
+        <div className="mt-2 flex items-center justify-center gap-3 text-sm text-slate-400">
+          <span aria-hidden="true">←</span>
+          <span>Use the arrows or swipe to explore projects</span>
+          <span aria-hidden="true">→</span>
         </div>
       </section>
       <section id="experience" className="max-w-6xl mx-auto px-6 py-16">
