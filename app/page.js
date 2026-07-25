@@ -100,7 +100,7 @@ export default function PortfolioWebsite() {
       description:
         "An Android-based eye health application that monitors ambient light, screen time, device proximity, and user behavior to promote healthier digital habits. The system provides real-time recommendations and notifications to reduce eye strain, with ongoing development focused on AI-powered eye health analysis, cloud synchronization, and personalized wellness insights.",
       tech: ["Java", "Android SDK", "SQLite", "CameraX", "Device Sensors", "Usage Stats API", "Foreground Services", "Notifications"],
-      github: "https://github.com/JobMunyoki",
+      github: "https://github.com/JobMunyoki/SmartVision",
       demo: "#"
     },
     {
@@ -364,9 +364,9 @@ export default function PortfolioWebsite() {
           </h2>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           {/* Main About Me card */}
-          <div className="rounded-3xl border border-white/10 bg-slate-900 p-8 shadow-xl md:p-10">
+          <div className="self-start rounded-3xl border border-white/10 bg-slate-900 p-8 shadow-xl md:p-10">
             <p className="mb-5 text-lg leading-8 text-slate-300">
               I am a Computer Science graduate with practical experience building
               full-stack web applications, backend APIs, Android applications,
@@ -374,41 +374,15 @@ export default function PortfolioWebsite() {
               database-driven solutions.
             </p>
 
-            <p className="mb-8 text-lg leading-8 text-slate-300">
+            <p className="text-lg leading-8 text-slate-300">
               I enjoy solving real-world problems through technology by creating
               secure, reliable, and user-friendly applications. My projects cover
               fraud detection, business analytics, sales forecasting, mobile
               automation, cybersecurity management, and digital health.
             </p>
 
-            {/* Quick statistics */}
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
-                <p className="text-3xl font-bold text-cyan-300">
-                  {projects.length}+
-                </p>
-                <p className="mt-1 text-sm text-slate-400">Projects</p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
-                <p className="text-3xl font-bold text-cyan-300">5+</p>
-                <p className="mt-1 text-sm text-slate-400">Live Deployments</p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
-                <p className="text-3xl font-bold text-cyan-300">
-                  {skills.length}+
-                </p>
-                <p className="mt-1 text-sm text-slate-400">Technologies</p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
-                <p className="text-3xl font-bold text-cyan-300">End-to-End</p>
-                <p className="mt-1 text-sm text-slate-400">Project Experience</p>
-              </div>
-            </div>
+            
           </div>
-
           {/* Professional strengths card */}
           <div className="rounded-3xl border border-white/10 bg-slate-900 p-8 shadow-xl md:p-10">
             <p className="mb-5 text-sm uppercase tracking-[0.25em] text-cyan-300">
