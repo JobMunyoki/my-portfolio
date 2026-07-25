@@ -353,47 +353,113 @@ export default function PortfolioWebsite() {
       </section>
 
       <section id="about" className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-6">
-          <div className="bg-slate-900 border border-white/10 rounded-3xl shadow-xl p-8 md:p-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">About Me</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-5">A developer focused on useful, practical systems.</h2>
-            <p className="text-slate-300 leading-8 text-lg mb-5">
+        <div className="mb-8">
+          <p className="mb-3 text-sm uppercase tracking-[0.25em] text-cyan-300">
+            About Me
+          </p>
+
+          <h2 className="max-w-4xl text-3xl font-bold leading-tight md:text-4xl">
+            A developer focused on building practical, secure, and deployable
+            software solutions.
+          </h2>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+          {/* Main About Me card */}
+          <div className="rounded-3xl border border-white/10 bg-slate-900 p-8 shadow-xl md:p-10">
+            <p className="mb-5 text-lg leading-8 text-slate-300">
               I am a Computer Science graduate with practical experience building
               full-stack web applications, backend APIs, Android applications,
-              machine-learning systems, and database-driven platforms.
+              machine-learning systems, cybersecurity platforms, and
+              database-driven solutions.
             </p>
 
-            <p className="text-slate-300 leading-8 text-lg">
-              My projects include fraud detection, cybersecurity management,
-              business analytics, sales prediction, and mobile health technology.
-              I focus on building reliable, usable, and deployable software solutions.
+            <p className="mb-8 text-lg leading-8 text-slate-300">
+              I enjoy solving real-world problems through technology by creating
+              secure, reliable, and user-friendly applications. My projects cover
+              fraud detection, business analytics, sales forecasting, mobile
+              automation, cybersecurity management, and digital health.
             </p>
+
+            {/* Quick statistics */}
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
+                <p className="text-3xl font-bold text-cyan-300">
+                  {projects.length}+
+                </p>
+                <p className="mt-1 text-sm text-slate-400">Projects</p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
+                <p className="text-3xl font-bold text-cyan-300">5+</p>
+                <p className="mt-1 text-sm text-slate-400">Live Deployments</p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
+                <p className="text-3xl font-bold text-cyan-300">
+                  {skills.length}+
+                </p>
+                <p className="mt-1 text-sm text-slate-400">Technologies</p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-slate-800/80 p-4 text-center">
+                <p className="text-3xl font-bold text-cyan-300">End-to-End</p>
+                <p className="mt-1 text-sm text-slate-400">Project Experience</p>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-slate-900 border border-white/10 rounded-3xl shadow-xl p-8 md:p-10">
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-300 mb-4">What I Bring</p>
-            <div className="space-y-5 text-slate-300 leading-7">
-              <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
-                <h3 className="font-semibold text-white mb-2">
-                  Full-Stack Perspective
+          {/* Professional strengths card */}
+          <div className="rounded-3xl border border-white/10 bg-slate-900 p-8 shadow-xl md:p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.25em] text-cyan-300">
+              Professional Strengths
+            </p>
+
+            <div className="space-y-4">
+              <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-5">
+                <h3 className="mb-2 font-semibold text-white">
+                  Full-Stack Development
                 </h3>
-                <p>
-                  I work across frontend interfaces, backend APIs, databases,
-                  machine-learning services, and deployment workflows.
+
+                <p className="leading-7 text-slate-400">
+                  Building responsive interfaces, backend APIs, database
+                  integrations, authentication systems, and deployed web
+                  applications.
                 </p>
               </div>
-              <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
-                <h3 className="font-semibold text-white mb-2">
-                  End-to-End Project Experience
+
+              <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-5">
+                <h3 className="mb-2 font-semibold text-white">
+                  AI and Machine Learning
                 </h3>
-                <p>
-                  I have designed, developed, tested, documented, and deployed practical
-                  software projects from concept to production.
+
+                <p className="leading-7 text-slate-400">
+                  Developing fraud-detection systems, prediction models, analytics
+                  dashboards, and intelligent decision-support solutions.
                 </p>
               </div>
-              <div className="rounded-2xl bg-white/5 border border-white/10 p-5">
-                <h3 className="font-semibold text-white mb-2">Growth Mindset</h3>
-                <p>I learn quickly, adapt to tools fast, and value clean solutions that solve real problems.</p>
+
+              <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-5">
+                <h3 className="mb-2 font-semibold text-white">
+                  Android Development
+                </h3>
+
+                <p className="leading-7 text-slate-400">
+                  Creating Android applications using Java, Kotlin, Android SDK,
+                  Material Design, device sensors, notifications, and background
+                  services.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-5">
+                <h3 className="mb-2 font-semibold text-white">
+                  Cybersecurity and Secure Systems
+                </h3>
+
+                <p className="leading-7 text-slate-400">
+                  Implementing authentication, authorization, audit logging,
+                  vulnerability management, secure APIs, and role-based access.
+                </p>
               </div>
             </div>
           </div>
@@ -436,18 +502,25 @@ export default function PortfolioWebsite() {
             </p>
           </div>
 
-          {/* Carousel navigation buttons */}
-          <div className="flex items-center gap-3">
+          {/* Prominent carousel navigation */}
+          <div className="flex items-center gap-3 rounded-2xl border border-cyan-400/30 bg-cyan-400/10 p-2 shadow-lg shadow-cyan-500/10">
+            <div className="hidden sm:block px-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                More projects
+              </p>
+
+              <p className="text-sm text-slate-300">
+                Browse left or right
+              </p>
+            </div>
+
             <button
               type="button"
               onClick={() => scrollProjects("left")}
-              aria-label="Scroll to previous project"
-              className="group flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-slate-900 text-xl text-white shadow-lg transition hover:-translate-y-0.5 hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              aria-label="View previous projects"
+              className="group flex h-14 w-14 items-center justify-center rounded-xl border border-white/15 bg-slate-900 text-2xl text-white shadow-md transition hover:-translate-y-0.5 hover:border-cyan-300 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-300"
             >
-              <span
-                aria-hidden="true"
-                className="transition-transform group-hover:-translate-x-0.5"
-              >
+              <span className="transition-transform group-hover:-translate-x-1">
                 ←
               </span>
             </button>
@@ -455,17 +528,29 @@ export default function PortfolioWebsite() {
             <button
               type="button"
               onClick={() => scrollProjects("right")}
-              aria-label="Scroll to next project"
-              className="group flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-slate-900 text-xl text-white shadow-lg transition hover:-translate-y-0.5 hover:border-cyan-400/50 hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              aria-label="View more projects"
+              className="group relative flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-400 text-2xl font-bold text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:-translate-y-0.5 hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300"
             >
-              <span
-                aria-hidden="true"
-                className="transition-transform group-hover:translate-x-0.5"
-              >
+              <span className="transition-transform group-hover:translate-x-1">
                 →
+              </span>
+
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-indigo-500 px-1 text-[10px] font-bold text-white">
+                +
               </span>
             </button>
           </div>
+        </div>
+
+        <div className="mb-5 flex items-center gap-3 rounded-2xl border border-cyan-400/20 bg-slate-900/80 px-4 py-3 text-sm text-slate-300">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cyan-400 font-bold text-slate-950">
+            →
+          </span>
+
+          <p>
+            More projects are available. Use the navigation buttons or swipe
+            horizontally to explore all {projects.length} projects.
+          </p>
         </div>
 
         {/* Horizontal project carousel */}
@@ -543,14 +628,7 @@ export default function PortfolioWebsite() {
               </div>
             </article>
           ))}
-        </div>
-
-        {/* Browsing instruction */}
-        <div className="mt-2 flex items-center justify-center gap-3 text-sm text-slate-400">
-          <span aria-hidden="true">←</span>
-          <span>Use the arrows or swipe to explore projects</span>
-          <span aria-hidden="true">→</span>
-        </div>
+        </div>      
       </section>
       <section id="experience" className="max-w-6xl mx-auto px-6 py-16">
   <div className="flex items-end justify-between gap-4 mb-8 flex-wrap">
