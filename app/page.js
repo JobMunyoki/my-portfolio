@@ -267,7 +267,7 @@ export default function PortfolioWebsite() {
                 </a>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="/cv.pdf"
+                    href="/cv.pdf?v=2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-white text-slate-950 font-semibold shadow-lg hover:-translate-y-0.5 transition"
@@ -279,7 +279,7 @@ export default function PortfolioWebsite() {
                     </span>
                   </a>
                   <a
-                    href="/cv.pdf"
+                    href="/cv.pdf?v=2"
                     download
                     className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-cyan-400/30 text-cyan-200 font-medium hover:bg-cyan-400/10 transition"
                   >
