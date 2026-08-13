@@ -95,17 +95,6 @@ export default function PortfolioWebsite() {
       demo: "https://cybershield-three-pi.vercel.app"
     },
     {
-      title: "SmartVision",
-      category: "Android Application",
-      image: "/projects/smartvision.png",
-      status: "Ongoing Development",
-      description:
-        "An Android-based eye health application that monitors ambient light, screen time, device proximity, and user behavior to promote healthier digital habits. The system provides real-time recommendations and notifications to reduce eye strain, with ongoing development focused on AI-powered eye health analysis, cloud synchronization, and personalized wellness insights.",
-      tech: ["Java", "Android SDK", "SQLite", "CameraX", "Device Sensors", "Usage Stats API", "Foreground Services", "Notifications"],
-      github: "https://github.com/JobMunyoki/SmartVision",
-      demo: "#"
-    },
-    {
       title: "AutoDND",
       category: "Android Automation Application",
       image: "/projects/autodnd.png",
@@ -134,23 +123,23 @@ export default function PortfolioWebsite() {
       github: "https://github.com/JobMunyoki/urban-swap-lite",
       demo: "https://urban-swap-lite-4frfzdunj-jobmunyokis-projects.vercel.app"
     },
-    {
-  title: "Smart Agrovet Sales Analytics Dashboard",
-  category: "Data Analytics & Business Intelligence",
-  image: "/projects/smart-agrovet.png",
-  description:
-    "A business intelligence dashboard designed for agrovet businesses to analyze sales performance, product demand, revenue trends, and inventory movement. The system processes sales data from CSV files and provides actionable insights through interactive visualizations and KPI tracking.",
-  tech: [
-    "Python",
-    "Pandas",
-    "Streamlit",
-    "Plotly",
-    "CSV Analytics",
-    "Business Intelligence"
-  ],
-  github: "https://github.com/JobMunyoki",
-  demo: "https://smart-agrovet-sales-dashboard-adm6s4hshkgz2ejtpehewx.streamlit.app"
-},
+      {
+    title: "Smart Agrovet Sales Analytics Dashboard",
+    category: "Data Analytics & Business Intelligence",
+    image: "/projects/smart-agrovet.png",
+    description:
+      "A business intelligence dashboard designed for agrovet businesses to analyze sales performance, product demand, revenue trends, and inventory movement. The system processes sales data from CSV files and provides actionable insights through interactive visualizations and KPI tracking.",
+    tech: [
+      "Python",
+      "Pandas",
+      "Streamlit",
+      "Plotly",
+      "CSV Analytics",
+      "Business Intelligence"
+    ],
+    github: "https://github.com/JobMunyoki",
+    demo: "https://smart-agrovet-sales-dashboard-adm6s4hshkgz2ejtpehewx.streamlit.app"
+  },
   {
   title: "Agrovet Sales Prediction Model",
   category: "Machine Learning & Predictive Analytics",
@@ -196,7 +185,7 @@ export default function PortfolioWebsite() {
     "Docker",
     "GitHub Actions"
   ],
-  github: "YOUR_DUKAFLOW_REPOSITORY_URL",
+  github: "https://github.com/DukaFlowAI/dukaflow-ai",
   demo: "#"
 },
 
