@@ -48,7 +48,6 @@ export default function PortfolioWebsite() {
     "Cybersecurity",
     "Git/GitHub",
     "Vercel",
-    "Railway",
     "Render",
     "Android Development",
     "Material Design",
@@ -60,6 +59,7 @@ export default function PortfolioWebsite() {
     {
       title: "FraudGuard AI",
       category: "AI-Powered Banking Fraud Detection",
+      image: "/projects/fraudguard-ai.png",
       description:
         "An AI-powered banking fraud detection platform built with Spring Boot, React, FastAPI, MySQL, Render, and Vercel. The system analyzes financial transactions, predicts fraudulent activity using machine learning, calculates fraud risk scores, provides interactive analytics dashboards, and supports secure fraud investigation workflows through role-based access.",
       tech: [
@@ -80,14 +80,15 @@ export default function PortfolioWebsite() {
     {
       title: "CyberShield",
       category: "Cybersecurity Incident & Vulnerability Management System",
+      image: "/projects/cybershield.png",
       description:
-        "A full-stack cybersecurity platform that enables organizations to manage IT assets, report security incidents, track vulnerabilities, monitor critical alerts, maintain investigation timelines, and generate audit logs through a secure role-based system.",
+        "A full-stack cybersecurity incident and vulnerability management platform that enables organizations to manage IT assets, report and investigate security incidents, track vulnerabilities, monitor critical alerts, and maintain audit logs through secure role-based access. The Django REST Framework backend is deployed on Render, while the React frontend is deployed on Vercel.",
       tech: [
         "Django REST Framework",
         "React",
         "Material UI",
         "MySQL",
-        "Railway",
+        "Render",
         "Vercel"
       ],
       github: "https://github.com/JobMunyoki/cybershield",
@@ -96,6 +97,7 @@ export default function PortfolioWebsite() {
     {
       title: "SmartVision",
       category: "Android Application",
+      image: "/projects/smartvision.png",
       status: "Ongoing Development",
       description:
         "An Android-based eye health application that monitors ambient light, screen time, device proximity, and user behavior to promote healthier digital habits. The system provides real-time recommendations and notifications to reduce eye strain, with ongoing development focused on AI-powered eye health analysis, cloud synchronization, and personalized wellness insights.",
@@ -106,6 +108,7 @@ export default function PortfolioWebsite() {
     {
       title: "AutoDND",
       category: "Android Automation Application",
+      image: "/projects/autodnd.png",
       description:
         "An Android automation application designed to detect when Do Not Disturb mode is active and automatically respond to incoming WhatsApp messages. The application provides a Material Design dashboard, customizable auto-reply messages, service controls, and status monitoring to help users manage communication while unavailable.",
       tech: [
@@ -124,6 +127,7 @@ export default function PortfolioWebsite() {
     {
       title: "Urban Swap",
       category: "Web Platform",
+      image: "/projects/urban-swap.png",
       description:
         "A car hire web platform that allows owners to list vehicles and clients to browse, book, and manage rentals through a structured digital workflow.",
       tech: ["Next.js", "Supabase", "Tailwind CSS", "Vercel", "GitHub"],
@@ -133,6 +137,7 @@ export default function PortfolioWebsite() {
     {
   title: "Smart Agrovet Sales Analytics Dashboard",
   category: "Data Analytics & Business Intelligence",
+  image: "/projects/smart-agrovet.png",
   description:
     "A business intelligence dashboard designed for agrovet businesses to analyze sales performance, product demand, revenue trends, and inventory movement. The system processes sales data from CSV files and provides actionable insights through interactive visualizations and KPI tracking.",
   tech: [
@@ -149,6 +154,7 @@ export default function PortfolioWebsite() {
   {
   title: "Agrovet Sales Prediction Model",
   category: "Machine Learning & Predictive Analytics",
+  image: "/projects/agrovet-prediction.png",
   description:
     "A machine learning application that predicts future agrovet sales using historical sales data. The model helps businesses forecast demand, identify sales trends, and support inventory planning and business decision-making.",
   tech: [
@@ -162,6 +168,38 @@ export default function PortfolioWebsite() {
   github: "https://github.com/JobMunyoki",
   demo: "https://jobmunyoki-agrovet-sales-prediction-model-app-j7b7sn.streamlit.app"
 },
+  {
+      title: "SmartVision",
+      category: "Android Application",
+      image: "/projects/smartvision.png",
+      status: "Ongoing Development",
+      description:
+        "An Android-based eye health application that monitors ambient light, screen time, device proximity, and user behavior to promote healthier digital habits. The system provides real-time recommendations and notifications to reduce eye strain, with ongoing development focused on AI-powered eye health analysis, cloud synchronization, and personalized wellness insights.",
+      tech: ["Java", "Android SDK", "SQLite", "CameraX", "Device Sensors", "Usage Stats API", "Foreground Services", "Notifications"],
+      github: "https://github.com/JobMunyoki/SmartVision",
+      demo: "#"
+    },
+    {
+  title: "DukaFlow AI",
+  category: "AI-Powered Retail ERP Platform",
+  status: "Early Development",
+  description:
+    "A collaborative smart retail ERP platform being developed for Kenyan SMEs. DukaFlow AI is designed to integrate inventory management, sales, purchases, expenses, role-based access, business analytics, M-Pesa payments, and AI-powered demand forecasting into a unified system. The project is currently in early development with the system architecture, backend, frontend, database design, and collaborative GitHub workflow being established.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Spring Boot",
+    "FastAPI",
+    "MySQL",
+    "Material UI",
+    "M-Pesa Daraja API",
+    "Docker",
+    "GitHub Actions"
+  ],
+  github: "YOUR_DUKAFLOW_REPOSITORY_URL",
+  demo: "#"
+},
+
         
   ];
   const experience = [
@@ -300,7 +338,9 @@ export default function PortfolioWebsite() {
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <p className="text-2xl font-bold text-cyan-300">7+</p>
+                  <p className="text-2xl font-bold text-cyan-300">
+                    {projects.length}
+                  </p>
                   <p className="text-sm text-slate-400 mt-1">Featured Projects</p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -533,75 +573,102 @@ export default function PortfolioWebsite() {
           className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {projects.map((project) => (
-            <article
-              key={project.title}
-              data-project-card
-              className="group w-[88%] shrink-0 snap-start rounded-3xl border border-white/10 bg-slate-900 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400/30 sm:w-[70%] md:w-[48%] lg:w-[calc((100%-3rem)/3)]"
-            >
-              <div className="flex h-full flex-col">
-                {/* Project visual header */}
-                <div className="relative mb-5 h-44 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-800 via-slate-800 to-slate-700">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.2),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.18),_transparent_30%)]" />
+          <article
+            key={project.title}
+            data-project-card
+            className="group w-[88%] shrink-0 snap-start rounded-3xl border border-white/10 bg-slate-900 p-6 shadow-xl transition hover:-translate-y-1 hover:border-cyan-400/30 sm:w-[70%] md:w-[48%] lg:w-[calc((100%-3rem)/3)]"
+          >
+            <div className="flex h-full flex-col">
+              {/* Project visual header */}
+              <div className="relative mb-5 h-60 overflow-hidden rounded-2xl border border-white/10 bg-slate-800">
+                {project.image ? (
+                  <>
+                    <img
+                      src={project.image}
+                      alt={`${project.title} project screenshot`}
+                      className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                    />
 
-                  <div className="absolute inset-0 flex flex-col items-start justify-end p-5">
-                    <span className="mb-2 text-xs uppercase tracking-[0.25em] text-cyan-200/90">
-                      {project.category}
-                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
 
-                    {project.status && (
-                      <span className="mb-2 inline-flex w-fit rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
-                        {project.status}
+                    <div className="absolute inset-x-0 bottom-0 p-5">
+                      <span className="mb-2 block text-xs uppercase tracking-[0.25em] text-cyan-200">
+                        {project.category}
                       </span>
-                    )}
 
-                    <h3 className="text-2xl font-semibold text-white">
-                      {project.title}
-                    </h3>
-                  </div>
-                </div>
+                      {project.status && (
+                        <span className="mb-2 inline-flex w-fit rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
+                          {project.status}
+                        </span>
+                      )}
 
-                {/* Project description */}
-                <p className="mb-5 flex-1 leading-7 text-slate-300">
-                  {project.description}
-                </p>
+                      <h3 className="text-2xl font-semibold text-white">
+                        {project.title}
+                      </h3>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.2),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(99,102,241,0.18),_transparent_30%)]" />
 
-                {/* Technology tags */}
-                <div className="mb-6 flex flex-wrap gap-2">
-                  {project.tech.map((item) => (
-                    <span
-                      key={`${project.title}-${item}`}
-                      className="rounded-full border border-white/5 bg-slate-800 px-3 py-1 text-sm text-slate-200"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
+                    <div className="absolute inset-0 flex flex-col items-start justify-end p-5">
+                      <span className="mb-2 text-xs uppercase tracking-[0.25em] text-cyan-200/90">
+                        {project.category}
+                      </span>
 
-                {/* Project links */}
-                <div className="mt-auto flex gap-3">
+                      {project.status && (
+                        <span className="mb-2 inline-flex w-fit rounded-full border border-amber-400/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
+                          {project.status}
+                        </span>
+                      )}
+
+                      <h3 className="text-2xl font-semibold text-white">
+                        {project.title}
+                      </h3>
+                    </div>
+                  </>
+                )}
+              </div>
+
+              <p className="mb-5 flex-1 leading-7 text-slate-300">
+                {project.description}
+              </p>
+
+              <div className="mb-6 flex flex-wrap gap-2">
+                {project.tech.map((item) => (
+                  <span
+                    key={`${project.title}-${item}`}
+                    className="rounded-full border border-white/5 bg-slate-800 px-3 py-1 text-sm text-slate-200"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-auto flex gap-3">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 rounded-2xl bg-cyan-400 px-4 py-3 text-center font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                >
+                  View Code
+                </a>
+
+                {project.demo !== "#" && (
                   <a
-                    href={project.github}
+                    href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 rounded-2xl bg-cyan-400 px-4 py-3 text-center font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                    className="flex-1 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center font-medium transition hover:-translate-y-0.5 hover:bg-white/10"
                   >
-                    View Code
+                    Live Demo
                   </a>
-
-                  {project.demo !== "#" && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center font-medium transition hover:-translate-y-0.5 hover:bg-white/10"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                </div>
+                )}
               </div>
-            </article>
-          ))}
+            </div>
+          </article>
+        ))}
         </div>      
       </section>
       <section id="experience" className="max-w-6xl mx-auto px-6 py-16">
