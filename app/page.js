@@ -188,7 +188,24 @@ export default function PortfolioWebsite() {
   github: "https://github.com/DukaFlowAI/dukaflow-ai",
   demo: "#"
 },
+{
+  title: "CSV Data Quality Checker",
 
+  category: "Data Quality / Streamlit Application",
+
+  image: "/projects/csv-data-quality-checker.png",
+
+  description:
+
+  "A collaborative Python-based data quality application that analyzes CSV datasets for missing values, duplicate rows, and duplicate IDs. The Streamlit dashboard provides interactive dataset previews, quality metrics, validation results, visualizations, and an overall data-quality score. Job contributed to the Streamlit dashboard, CSV upload workflow, data visualizations, quality-score presentation, sample-dataset experience, and GitHub collaboration through feature branches and pull requests.",
+
+  tech: ["Python", "Streamlit", "Pandas", "Pytest", "Git", "GitHub", "CSV", "Data Visualization", "Streamlit Community Cloud"],
+
+  github: "https://github.com/scotlanbettes/csv-data-quality-checker",
+
+  demo: "https://csv-data-quality-checker-zbqqjhzwciuvngr2gjerh3.streamlit.app/"
+
+},
         
   ];
   const experience = [
