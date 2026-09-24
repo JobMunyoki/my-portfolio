@@ -24,6 +24,9 @@ export default function PortfolioWebsite() {
     "Python",
     "Kotlin",
     "JavaScript",
+    "Pytest",
+    "GitHub Actions",
+    "CI/CD",
     "Spring Boot",
     "FastAPI",
     "Django REST Framework",
@@ -44,6 +47,8 @@ export default function PortfolioWebsite() {
     "Streamlit",
     "Plotly",
     "Data Analytics",
+    "Data Quality",
+    "Data Cleaning",
     "Predictive Analytics",
     "Cybersecurity",
     "Git/GitHub",
@@ -189,21 +194,36 @@ export default function PortfolioWebsite() {
   demo: "#"
 },
 {
-  title: "CSV Data Quality Checker",
+  title: "CSV Data Quality Checker V2",
 
-  category: "Data Quality / Streamlit Application",
+  category: "Data Quality Engineering & Cleaning Platform",
 
   image: "/projects/csv-data-quality-checker.png",
 
+
   description:
+    "An advanced Python and Streamlit data-quality platform for analyzing, validating, cleaning, and improving CSV datasets. Version 2 was independently developed by Job Munyoki as a major upgrade of the original collaborative V1 project. It introduces weighted quality scoring, column-level quality scores, missing-value handling, duplicate detection, whitespace and empty-string validation, inconsistent data-type detection, IQR-based outlier detection, capitalization checks, interactive data cleaning, before-and-after reporting, cleaned CSV exports, downloadable quality reports, 34 automated tests, and GitHub Actions continuous integration.",
 
-  "A collaborative Python-based data quality application that analyzes CSV datasets for missing values, duplicate rows, and duplicate IDs. The Streamlit dashboard provides interactive dataset previews, quality metrics, validation results, visualizations, and an overall data-quality score. Job contributed to the Streamlit dashboard, CSV upload workflow, data visualizations, quality-score presentation, sample-dataset experience, and GitHub collaboration through feature branches and pull requests.",
-
-  tech: ["Python", "Streamlit", "Pandas", "Pytest", "Git", "GitHub", "CSV", "Data Visualization", "Streamlit Community Cloud"],
+  tech: [
+    "Python",
+    "Streamlit",
+    "Pandas",
+    "Pytest",
+    "GitHub Actions",
+    "Data Validation",
+    "Data Cleaning",
+    "Data Quality",
+    "IQR Outlier Detection",
+    "CSV Analytics",
+    "Git",
+    "GitHub",
+    "CI/CD",
+    "Streamlit Community Cloud"
+  ],
 
   github: "https://github.com/scotlanbettes/csv-data-quality-checker",
 
-  demo: "https://csv-data-quality-checker-zbqqjhzwciuvngr2gjerh3.streamlit.app/"
+  demo: "https://csv-data-quality-checker-v2.streamlit.app/"
 
 },
         
